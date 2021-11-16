@@ -1,19 +1,19 @@
+const head = require('./config/head.js');
+const plugins = require('./config/plugins.js');
+const themeConfig = require('./config/themeConfig.js');
+
 module.exports = {
-  title: 'blog/wangjie',
-  description: '个人网站',
-  head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
-  ],
-  base: '/', // 这是部署到github相关的配置
+  theme: 'vdoing', // 使用npm包主题
+  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+
+  title: "wangjie's blog",
+  description: '技术博客、日常记录',
+  // base: '/', // 格式：'/<仓库名>/'， 默认'/'
   markdown: {
-    lineNumbers: false // 代码块显示行号
+    lineNumbers: true, // 代码行号
   },
-  themeConfig: {
-    nav:[ // 导航栏配置
-      {text: 'vue', link: '/vue/' },
-      {text: 'react', link: '/react/'}     
-    ],
-    // sidebar: 'auto', // 侧边栏配置
-    // sidebarDepth: 2, // 侧边栏显示2级
-  }
+
+  head,
+  plugins,
+  themeConfig,
 }
