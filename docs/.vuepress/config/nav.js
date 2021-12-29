@@ -16,12 +16,12 @@ module.exports = [
   // },
   {
     text: '工具',
-    link: '/pages/f74aeb/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    link: '/pages/970a7c/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
       {
-        text: 'Echarts',
-        link: '/pages/f74aeb/',
+        text: '基本使用-all',
+        link: '/pages/970a7c/',
         // items: [
         //   { text: '/pages/8d5317/', link: '/pages/8d5317/' },
         // ],
