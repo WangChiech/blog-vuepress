@@ -28,6 +28,20 @@ module.exports = [
       }
     ],
   },
+  {
+    text: '杂',
+    link: '/pages/970a7c/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [
+      // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
+      {
+        text: '未分类',
+        link: '/pages/65d425/',
+        // items: [
+        //   { text: '/pages/8d5317/', link: '/pages/8d5317/' },
+        // ],
+      }
+    ],
+  },
   // {
   //   text: '框架',
   //   link: '/frame/',
